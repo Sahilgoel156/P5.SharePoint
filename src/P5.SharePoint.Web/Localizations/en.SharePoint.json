@@ -1,0 +1,28 @@
+{
+  "SharePoint": {
+    "blades": {
+      "hello-world": {
+        "title": "Hello world blade"
+      }
+    }
+  },
+  "permissions": {
+    "SharePoint:access": "Open SharePoint menu",
+    "SharePoint:create": "Create SharePoint related data",
+    "SharePoint:read": "View SharePoint related data",
+    "SharePoint:update": "Update SharePoint related data",
+    "SharePoint:delete": "Delete SharePoint related data"
+  },
+  "settings": {
+    "SharePoint": {
+      "SharePointEnabled": {
+        "title": "SharePoint Enabled",
+        "description": "SharePoint Enabled setting"
+      },
+      "SharePointPassword": {
+        "title": "SharePoint Password",
+        "description": "SharePoint Password setting"
+      }
+    }
+  }
+}

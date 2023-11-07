@@ -1,0 +1,64 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{27674943-E66A-4903-BD90-BCB1CD955DD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P5.SharePoint.Web", "src\P5.SharePoint.Web\P5.SharePoint.Web.csproj", "{F7E2D3BB-CEF1-4550-8060-AE84788641C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P5.SharePoint.Data", "src\P5.SharePoint.Data\P5.SharePoint.Data.csproj", "{DC8742E8-1B39-44C2-B64C-F91C10B12AE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P5.SharePoint.Core", "src\P5.SharePoint.Core\P5.SharePoint.Core.csproj", "{FEDA1170-FACD-42B6-8BCD-C66FB643E6EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C2C03C5C-0B7F-435C-A692-9F563F3C76F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P5.SharePoint.Tests", "tests\P5.SharePoint.Tests\P5.SharePoint.Tests.csproj", "{944EB19E-4692-40B6-B58A-1D2BFCBD7235}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A36F42C-110B-4F9C-A7CF-00A8F599805E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		module.ignore = module.ignore
+		README.md = README.md
+		P5.SharePoint.sln.DotSettings = P5.SharePoint.sln.DotSettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7E2D3BB-CEF1-4550-8060-AE84788641C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E2D3BB-CEF1-4550-8060-AE84788641C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E2D3BB-CEF1-4550-8060-AE84788641C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E2D3BB-CEF1-4550-8060-AE84788641C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8742E8-1B39-44C2-B64C-F91C10B12AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8742E8-1B39-44C2-B64C-F91C10B12AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8742E8-1B39-44C2-B64C-F91C10B12AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8742E8-1B39-44C2-B64C-F91C10B12AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEDA1170-FACD-42B6-8BCD-C66FB643E6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDA1170-FACD-42B6-8BCD-C66FB643E6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDA1170-FACD-42B6-8BCD-C66FB643E6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDA1170-FACD-42B6-8BCD-C66FB643E6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944EB19E-4692-40B6-B58A-1D2BFCBD7235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944EB19E-4692-40B6-B58A-1D2BFCBD7235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944EB19E-4692-40B6-B58A-1D2BFCBD7235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944EB19E-4692-40B6-B58A-1D2BFCBD7235}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7E2D3BB-CEF1-4550-8060-AE84788641C7} = {27674943-E66A-4903-BD90-BCB1CD955DD3}
+		{DC8742E8-1B39-44C2-B64C-F91C10B12AE8} = {27674943-E66A-4903-BD90-BCB1CD955DD3}
+		{FEDA1170-FACD-42B6-8BCD-C66FB643E6EC} = {27674943-E66A-4903-BD90-BCB1CD955DD3}
+		{944EB19E-4692-40B6-B58A-1D2BFCBD7235} = {C2C03C5C-0B7F-435C-A692-9F563F3C76F8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26893945-AADF-4FAF-AA2C-8F7F76A623CD}
+	EndGlobalSection
+EndGlobal

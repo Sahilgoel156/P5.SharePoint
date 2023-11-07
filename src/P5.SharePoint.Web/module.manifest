@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <id>P5.SharePoint</id>
+  <version>3.200.0</version>
+  <version-tag></version-tag>
+
+  <platformVersion>3.306.0</platformVersion>
+  <dependencies>
+    <!--<dependency id="VirtoCommerce.Core" version="3.211.0" />-->
+  </dependencies>
+
+  <title>P5 SharePoint module</title>
+  <description>P5 SharePoint module</description>
+
+  <authors>
+    <author>Jon Doe</author>
+  </authors>
+  <owners>
+    <owner>P5</owner>
+  </owners>
+
+  <projectUrl>https://github.com/P5/vc-module-share-point</projectUrl>
+  <iconUrl>Modules/$(P5.SharePoint)/Content/logo.png</iconUrl>
+  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+  <assemblyFile>P5.SharePoint.Web.dll</assemblyFile>
+  <moduleType>P5.SharePoint.Web.Module, P5.SharePoint.Web</moduleType>
+
+  <releaseNotes>First version.</releaseNotes>
+  <copyright>Copyright © 2023 P5. All rights reserved</copyright>
+  <tags>extension module</tags>
+  <useFullTypeNameInSwagger>false</useFullTypeNameInSwagger>
+</module>
