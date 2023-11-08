@@ -65,8 +65,8 @@ namespace P5.SharePoint.Data.Services
             item => item["Created"],
             item => item["Modified"],
             item => item["Author"],
-            item => item["Editor"]
-
+            item => item["Editor"],
+            item => item["Description"]
 
         };
 
@@ -573,8 +573,8 @@ namespace P5.SharePoint.Data.Services
                 Created = Convert.ToDateTime(item["Created"]),
                 Modified = Convert.ToDateTime(item["Modified"]),
                 CreatedBy = GetUserValue(item, "Author"),
-                ModifiedBy = GetUserValue(item, "Editor")
-
+                ModifiedBy = GetUserValue(item, "Editor"),
+                Description = Convert.ToString(item["Description"])
             };
 
             if (item.File?.ServerObjectIsNull == false)
