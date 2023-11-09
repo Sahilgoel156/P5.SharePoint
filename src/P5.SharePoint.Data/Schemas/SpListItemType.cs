@@ -21,7 +21,6 @@ namespace P5.SharePoint.Data.Schemas
             Field(x => x.Title);
             Field(x => x.FileName);
             Field(x => x.DisplayName);
-            Field(x => x.Description);
             Field(x => x.ContentType);
             Field(x => x.ModifiedBy);
             Field<NonNullGraphType<DateTimeGraphType>>("Modified", resolve: Context => Context.Source.Modified);

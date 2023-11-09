@@ -65,9 +65,7 @@ namespace P5.SharePoint.Data.Services
             item => item["Created"],
             item => item["Modified"],
             item => item["Author"],
-            item => item["Editor"],
-            item => item["Description"]
-
+            item => item["Editor"]
         };
 
         private static readonly IList<Library> _libraries = new[]
@@ -574,7 +572,6 @@ namespace P5.SharePoint.Data.Services
                 Modified = Convert.ToDateTime(item["Modified"]),
                 CreatedBy = GetUserValue(item, "Author"),
                 ModifiedBy = GetUserValue(item, "Editor"),
-                Description = Convert.ToString(item["Description"])
             };
 
             if (item.File?.ServerObjectIsNull == false)
