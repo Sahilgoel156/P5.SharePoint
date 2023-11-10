@@ -572,8 +572,10 @@ namespace P5.SharePoint.Data.Services
                 Modified = Convert.ToDateTime(item["Modified"]),
                 CreatedBy = GetUserValue(item, "Author"),
                 ModifiedBy = GetUserValue(item, "Editor"),
-                Description = GetUserValue(item, "_ExtendedDescription"),
-                DocumentType = GetUserValue(item, "DocumentType")
+                //Description = GetUserValue(item, "_ExtendedDescription"),
+                //DocumentType = GetUserValue(item, "DocumentType"),
+                _ExtendedDescription = Convert.ToString(item["_ExtendedDescription"]),
+                DocumentType = Convert.ToString(item["DocumentType"]),
 
             };
 
