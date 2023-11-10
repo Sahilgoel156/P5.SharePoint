@@ -26,6 +26,8 @@ namespace P5.SharePoint.Core.Models
         public string DocumentSetTitle { get; set; }
         public string DocumentTypeTitle { get; set; }
         public string Description { get; set; }
+        public string _ExtendedDescription { get; set; }
+        public string DocumentType { get; set; }
         public string Status { get; set; }
         public string AircraftFamily { get; set; }
         public string ModelNumber { get; set; }

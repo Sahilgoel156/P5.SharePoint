@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Microsoft.Online.SharePoint.TenantManagement;
-using Microsoft.SharePoint.Client.Publishing;
 using P5.SharePoint.Core;
 using P5.SharePoint.Core.Models;
 using P5.SharePoint.Core.Models.Common;
@@ -19,7 +17,6 @@ using P5.SharePoint.Core.Options;
 using P5.SharePoint.Core.Services;
 using P5.SharePoint.Data.Caching;
 using P5.SharePoint.Data.Query;
-using VirtoCommerce.ExperienceApiModule.Core.Extensions;
 using VirtoCommerce.Platform.Core.Caching;
 using VirtoCommerce.Platform.Core.Common;
 using VirtoCommerce.Platform.Core.Events;
@@ -59,13 +56,16 @@ namespace P5.SharePoint.Data.Services
             item => item.File.Name,
             item => item.File.Length,
             item => item.FileSystemObjectType,
-             item => item["Title"],
+            item => item["Title"],
             item => item["FileRef"],
             item => item["FileDirRef"],
             item => item["Created"],
             item => item["Modified"],
             item => item["Author"],
-            item => item["Editor"]
+            item => item["Editor"],
+            item => item["_ExtendedDescription"],
+            item => item["DocumentType"]
+
         };
 
         private static readonly IList<Library> _libraries = new[]
@@ -572,6 +572,9 @@ namespace P5.SharePoint.Data.Services
                 Modified = Convert.ToDateTime(item["Modified"]),
                 CreatedBy = GetUserValue(item, "Author"),
                 ModifiedBy = GetUserValue(item, "Editor"),
+                Description = GetUserValue(item, "_ExtendedDescription"),
+                DocumentType = GetUserValue(item, "DocumentType")
+
             };
 
             if (item.File?.ServerObjectIsNull == false)
