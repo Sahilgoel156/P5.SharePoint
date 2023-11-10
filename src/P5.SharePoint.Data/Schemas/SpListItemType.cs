@@ -25,7 +25,7 @@ namespace P5.SharePoint.Data.Schemas
             Field(x => x.ModifiedBy);
             Field<NonNullGraphType<DateTimeGraphType>>("Modified", resolve: Context => Context.Source.Modified);
             Field<StringGraphType>("_ExtendedDescription", resolve: Context => Context.Source._ExtendedDescription);
-            Field<StringGraphType>("_ExtendedDescription", resolve: Context => Context.Source.DocumentType);
+            Field<StringGraphType>("DocumentType", resolve: Context => Context.Source.DocumentType);
             Field<NonNullGraphType<DateTimeGraphType>>("Created", resolve: Context => Context.Source.Created);
             Field(x => x.CreatedBy);
             Field < NonNullGraphType<StringGraphType>>("FileId", resolve: Context => Context.Source.FileId.ToString());
