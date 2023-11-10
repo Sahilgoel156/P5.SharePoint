@@ -22,7 +22,7 @@ namespace P5.SharePoint.Data.Queries
        
         public virtual async Task<Result<ListItemSearchResult>> Handle(SearchSharePointQuery request, CancellationToken cancellationToken)
         {
-            var data = await _sharePointService.SearchListItemsAsync(new ListItemSearchCriteria() { Id = request.Id});
+            var data = await _sharePointService.SearchListItemsAsync(new ListItemSearchCriteria() { Id = request.StoreId});
             return data;
         }
 

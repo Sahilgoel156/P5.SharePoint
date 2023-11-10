@@ -99,11 +99,11 @@ namespace P5.SharePoint.Data.Schemas
             {
                 Name = "GetSharePointFileDetail",
                 Arguments = new QueryArguments(
-                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "id" }),
+                    new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "storeId" }),
                 Type = GraphTypeExtenstionHelper.GetActualType<SharePointSearchResponseType>(),
                 Resolver = new AsyncFieldResolver<object>(async context =>
                 {
-                    var query = new SearchSharePointQuery(context.GetArgument<string>("id"));
+                    var query = new SearchSharePointQuery(context.GetArgument<string>("storeId"));
                     var result = await _mediator.Send(query);
                     return result;
                 })

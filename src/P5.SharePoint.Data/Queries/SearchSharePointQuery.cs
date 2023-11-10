@@ -13,11 +13,11 @@ namespace P5.SharePoint.Data.Queries
 {
     public class SearchSharePointQuery : IQuery<Result<ListItemSearchResult>>
     {
-        public SearchSharePointQuery(string id)
+        public SearchSharePointQuery(string storeId)
         {
-            Id = id;
+            StoreId = storeId;
         }
-        public string Id { get; set; }
+        public string StoreId { get; set; }
 
     }
 }
